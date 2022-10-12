@@ -1407,7 +1407,7 @@ textarea {
 
 a {
     color: #337ab7;
-    text-decoration: none
+  
 }
 
 a:focus,
@@ -1437,7 +1437,7 @@ img {
 .thumbnail>img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: 429px;
 }
 
 .img-rounded {
@@ -2012,7 +2012,13 @@ pre code {
 
 .row {
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.partner{
+	flex-direction: row;
 }
 
 .col-lg-1,
@@ -4286,7 +4292,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4373,7 +4379,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 .open>.dropdown-menu {
@@ -5124,7 +5130,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
@@ -7795,7 +7801,8 @@ button.close {
 .center-block {
     display: block;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+	width: 100px;
 }
 
 .pull-right {
@@ -7874,6 +7881,12 @@ button.close {
     th.visible-xs {
         display: table-cell !important
     }
+	.img-responsive{
+		height: 737px;
+	}
+	.description_picture{
+	width: 100%;
+	}
 }
 
 @media (max-width:767px) {
