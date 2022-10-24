@@ -539,8 +539,10 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
     text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -760,7 +762,8 @@ h4 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
-	flex-direction: row;
+	flex-direction: column;
+	display: block;
 }
 
 .avatar {
@@ -1043,6 +1046,12 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+	
+}
+@media (max-width: 417px) {
+	.med-width-whitespace {
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 767px) {
